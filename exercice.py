@@ -85,6 +85,7 @@ def approx_pi(nb_pt=100):
             compteur +=1
     points = np.array([liste1, liste2])
     print('L valeur approchée de PI est:', ((4 * compteur) + 1) / nb_total_pt)
+    #Formule de PI: https://jpq.pagesperso-orange.fr/proba/montecarlo/index.htm#:~:text=Le%20calcul%20de%20%CF%80%20par,de%20disque%20de%20rayon%201.
     plt.plot(points[0], points[1],'ro')
     plt.show()
 
@@ -99,6 +100,8 @@ if __name__ == '__main__':
     print(coordinate_conversion(np.array([[1,0], [0,1]])))
     print(find_closest_index(a, 2.5))
     print(find_closest_index(coordinate_conversion(np.array([[1,0], [0,1]])),1))
-    approx_pi(10000)
+    #approx_pi(10000)
+    a = np.array([[1, 2, 3], [4, 5, 6]])
+    print(a.shape)
     #draw_function(X,Y)
-    #integrale()
+    integrale()
